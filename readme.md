@@ -23,16 +23,3 @@ var logger = new Logger({
   adapters: [FileAdapter, ConsoleAdapter]
 });
 ```
-
-Takes options from the options.console object passed to the Logger instance.
-
-The options are passed directly to util.inspect.
-
-Default options:
-```
-{
-  color: true,
-  showHidden: true,
-  dept: null
-}
-```
