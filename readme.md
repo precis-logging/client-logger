@@ -1,25 +1,8 @@
-Precis File Logger
+Precis Client Logger
 ===
 
-A file based logger for precis, really a building block for the other loggers.
+The base client logger for Precis, really a building block that you add adapters
+to to do the actual logging.
 
 If your looking for an advanced logger, look to Bunyan, otherwise this gives you
-a basic file logger.
-
-Built in Adapters
-===
-
-ConsoleAdapter
-===
-
-Not enabled by default, can be enabled by either adding to Logger.adapters or
-to each logger instance using:
-```
-var Logger = require('precis-client-logger').Logger;
-var FileAdapter = require('precis-file-adapter').FileAdapter;
-var ConsoleAdapter = require('precis-console-adapter').ConsoleAdapter;
-
-var logger = new Logger({
-  adapters: [FileAdapter, ConsoleAdapter]
-});
-```
+a basic logger.
