@@ -22,8 +22,10 @@ var HTTPCapture = require('precis-client-logger').HTTPCapture;
 // HAPI8 and HAPI6 captures are provided
 var HAPICapture = require('precis-client-logger').HAPI8Capture;
 
+// Register the ConsoleAdapter, then Regiser MongoAdapter with the
+// FileAdapter as a fallback if the MongoAdapter fails
 var logger = new Logger({
-  adapters: [ConsoleAdapter, FileAdapter]
+  adapters: [ConsoleAdapter, [MongoAdapter, FileAdapter]]
 });
 
 // Capture all outbound HTTP and HTTPS activities

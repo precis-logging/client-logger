@@ -4,12 +4,15 @@
   "description": "Log adapter for application use with Precis",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "./node_modules/.bin/mocha test"
   },
   "author": "Jeremy Darling <jeremy.darling@gmail.com>",
   "license": "MIT",
   "dependencies": {
     "async": "^0.9.0",
     "json-stringify-safe": "^5.0.0"
+  },
+  "devDependencies": {
+    "mocha": "^2.3.3"
   }
 }
