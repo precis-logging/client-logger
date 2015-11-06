@@ -1,6 +1,6 @@
 {
   "name": "precis-client-logger",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "description": "Log adapter for application use with Precis",
   "main": "index.js",
   "scripts": {
